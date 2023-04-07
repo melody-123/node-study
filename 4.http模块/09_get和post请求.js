@@ -1,0 +1,36 @@
+// 使用场景：
+// get请求：
+    // 1.在地址栏输入网址直接回车访问
+    // 2.在a标签中href属性中输入网址
+    // 3.在form表单中action属性中输入网址，method属性为get(不区分大小写)
+    // 4.在ajax中url属性中输入网址，type属性为get
+    // 5.在location.href中输入网址
+    // 6.在location.assign中输入网址
+    // 7.在location.replace中输入网址
+    // 8.在window.open中输入网址
+    // 9.link标签中的href属性
+    // 10.img标签中的src属性
+    // 11.script标签中的src属性
+    // 12.input标签中的src属性
+    // 13.frame标签中的src属性
+    // 14.video标签中的src属性
+    // 15.audio标签中的src属性
+
+// post请求：
+    // 1.在form表单中action属性中输入网址，method属性为post(不区分大小写)
+    // 2.在ajax中url属性中输入网址，type属性为post
+
+// get请求和post请求的区别：
+    // 1.请求方式不同
+    // 2.请求参数不同
+    // 3.请求参数的长度不同，get一般为2k，post一般为8M
+    // 4.安全性不同
+    // 5.浏览器的历史记录不同
+    // 6.缓存不同
+    // 7.可见性不同
+    // 8.可靠性不同
+    // 9.编码不同
+    // 10.参数位置不同
+    // 11.参数类型不同
+    // 12.参数数量不同
+    // 13.get用来获取数据，post用来提交数据
