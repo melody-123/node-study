@@ -31,4 +31,13 @@ router.post('/account', (req, res, next) => {
   res.send('新增记录')
 })
 
+// 删除记录
+router.get('/account/:id', (req, res, next) => {
+  // 获取params的id参数
+  const id = req.params.id
+  // 删除数据
+  db.get('account').remove({ id: id }).write()
+  res.send('删除记录')
+})
+
 module.exports = router;
