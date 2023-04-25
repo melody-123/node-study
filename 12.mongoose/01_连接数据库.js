@@ -38,6 +38,20 @@ mongoose.connection.once('open', (err) => {
     BookModel.deleteOne({}, (err, data) => { })
     // 删除多条,参数：条件，回调函数
     BookModel.deleteMany({}, (err, data) => { })
+    // 9.修改
+    // 修改一条,参数：条件，修改的内容，回调函数
+    BookModel.updateOne({}, {}, (err, data) => { })
+    // 修改多条,参数：条件，修改的内容，回调函数
+    BookModel.updateMany({}, {}, (err, data) => { })
+    // 10.查询
+    // 根据id查询一条,参数：id，回调函数
+    BookModel.findById('id', (err, data) => { })
+    // 查询一条,参数：条件，回调函数
+    BookModel.findOne({}, (err, data) => { })
+    // 指定条件查询多条,参数：条件，回调函数
+    BookModel.find({}, (err, data) => { })
+    // 查询所有,参数：回调函数
+    BookModel.find((err, data) => { })
 })
 // 设置数据库连接失败的回调
 mongoose.connection.on('error', (err) => {
